@@ -1,0 +1,46 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">YourApp</string>
+
+    <!-- LoginActivity -->
+    <string name="login_title">Teken in</string>
+    <string name="email_hint">E-pos</string>
+    <string name="password_hint">Wagwoord</string>
+    <string name="login_button">Teken in</string>
+    <string name="google_login_button">Teken in met Google</string>
+    <string name="biometric_login_button">Biometriese Teken-in</string>
+    <string name="login_success">Teken suksesvol in!</string>
+    <string name="login_failure">Teken-in het misluk</string>
+
+    <!-- RouteListActivity -->
+    <string name="route_list_title">Roetelys</string>
+    <string name="route_name">Naam</string>
+    <string name="route_difficulty">Moeilikheidsgraad</string>
+    <string name="route_distance">Afstand</string>
+    <string name="route_start_point">Beginpunt</string>
+    <string name="route_end_point">Eindpunt</string>
+    <string name="load_routes_error">Kon nie roetes laai nie</string>
+    <string name="loading_error">Fout: </string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_title">Instellings</string>
+    <string name="location_display">Huidige Ligging: Kwa-Zulu Natal</string>
+    <string name="change_language">Verander Taal</string>
+    <string name="offline_mode">Aflynmodus</string>
+    <string name="dark_mode">Skakel Donker Modus Aan</string>
+    <string name="unit_preference">Eenheidsvoorkeur</string>
+    <string name="step_goal">Voer Stappie Doel In</string>
+    <string name="save_step_goal">Stoor Stappie Doel</string>
+    <string name="step_goal_updated">Stappie Doel Opgedateer</string>
+    <string name="invalid_goal">Ongeldige Doel</string>
+    <string name="syncing_data">Data Sinchronisering..</string>
+    <string name="offline_enabled">Aflynmodus geaktiveer</string>
+    <string name="unit_kilometers">Kilometers</string>
+    <string name="unit_miles">Mylen</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">FCM Kennisgewings</string>
+    <string name="notification_title">Nuwe Kennisgewing</string>
+    <string name="notification_content">Jy het n nuwe boodskap ontvang.</string>
+    <string name="confirm_language_change" />
+</resources>

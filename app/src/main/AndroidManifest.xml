@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/___2_"
+        android:roundIcon="@drawable/___2_"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OPSCP2"
+        tools:ignore="ExtraText">
+
+        <!-- Firebase messaging service -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Activity declarations -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RouteDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RouteListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AreaSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- New HikeFromHomeGameActivity -->
+        <activity
+            android:name=".HikeFromHomeGameActivity"
+            android:exported="false" />
+
+        <!-- SplashActivity as the launcher activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDNc00yQFbwA9q3o2PSDRsi4Ck_J18XUQc" />
+
+    </application>
+
+</manifest>

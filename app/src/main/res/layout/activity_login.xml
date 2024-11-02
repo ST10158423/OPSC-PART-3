@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="16sp" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="10dp" />
+
+    <!-- Google Sign-In Button -->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnGoogleSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Sign in with Google"
+        android:elevation="4dp" />
+
+    <!-- Biometric Login Button -->
+    <Button
+        android:id="@+id/btnBiometricLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Biometric Login"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:elevation="4dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA">
+
+    <!-- GameView where the game will be drawn -->
+    <com.example.opscp2.HikeFromHomeGameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Display the score at the top -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:padding="16dp"
+        android:text="Score: 0"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF" />
+
+    <!-- Game Over screen with Restart Button -->
+    <LinearLayout
+        android:id="@+id/gameOverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#88000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Over"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart" />
+    </LinearLayout>
+
+</FrameLayout>

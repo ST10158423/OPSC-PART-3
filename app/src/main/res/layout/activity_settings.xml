@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Settings"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Language Selection Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Language"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Offline Mode Toggle Switch -->
+    <Switch
+        android:id="@+id/switchOfflineMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Offline Mode"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Dark Mode Toggle Switch -->
+    <Switch
+        android:id="@+id/switchTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Dark Mode"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Step Goal Input and Save Button -->
+    <EditText
+        android:id="@+id/etStepGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Step Goal"
+        android:inputType="number"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSaveStepGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Step Goal"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:paddingVertical="10dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Hike Summary Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvHikeSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hike Summary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvStepsTaken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steps Taken: 0"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDistanceCovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance Covered: 0.0 km"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCaloriesBurned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories Burned: 0 kcal"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

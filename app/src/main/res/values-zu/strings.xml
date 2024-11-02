@@ -1,0 +1,46 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">YourApp</string>
+
+    <!-- LoginActivity -->
+    <string name="login_title">Ngena ngemvume</string>
+    <string name="email_hint">I-imeyili</string>
+    <string name="password_hint">Iphasiwedi</string>
+    <string name="login_button">Ngena ngemvume</string>
+    <string name="google_login_button">Ngena ngemvume nge-Google</string>
+    <string name="biometric_login_button">Ngena ngemvume nge-Biometric</string>
+    <string name="login_success">Ukungena ngemvume kuyimpumelelo!</string>
+    <string name="login_failure">Ukungena ngemvume kuhlulekile</string>
+
+    <!-- RouteListActivity -->
+    <string name="route_list_title">Uhlu Lwezindlela</string>
+    <string name="route_name">Igama</string>
+    <string name="route_difficulty">Ubunzima</string>
+    <string name="route_distance">Ibanga</string>
+    <string name="route_start_point">Indawo Yokuqala</string>
+    <string name="route_end_point">Indawo Yokugcina</string>
+    <string name="load_routes_error">Yehlulekile ukulayisha izindlela</string>
+    <string name="loading_error">Iphutha: </string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_title">Izilungiselelo</string>
+    <string name="location_display">Indawo Yamanje: Kwa-Zulu Natal</string>
+    <string name="change_language">Shintsha Ulimi</string>
+    <string name="offline_mode">Imodi Engaxhunyiwe</string>
+    <string name="dark_mode">Nika amandla i-Mode Emnyama</string>
+    <string name="unit_preference">Ukukhetha Iyunithi</string>
+    <string name="step_goal">Faka Inhloso Yamanyathelo</string>
+    <string name="save_step_goal">Londoloza Inhloso Yamanyathelo</string>
+    <string name="step_goal_updated">Inhloso Yamanyathelo Ivuselelwe</string>
+    <string name="invalid_goal">Inhloso Ayivumelekile</string>
+    <string name="syncing_data">Ukulanda Idatha..</string>
+    <string name="offline_enabled">Imodi Engaxhunyiwe Yenziwe Yasebenza</string>
+    <string name="unit_kilometers">Amakhilomitha</string>
+    <string name="unit_miles">Amamayela</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Izaziso ze-FCM</string>
+    <string name="notification_title">Isaziso Esisha</string>
+    <string name="notification_content">Usanda kuthola umlayezo omusha.</string>
+    <string name="confirm_language_change" />
+</resources>

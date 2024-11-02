@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Route Name -->
+    <TextView
+        android:id="@+id/routeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Route Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Difficulty Level -->
+    <TextView
+        android:id="@+id/routeDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Distance -->
+    <TextView
+        android:id="@+id/routeDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Start Coordinates -->
+    <TextView
+        android:id="@+id/routeStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Coordinates"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- End Coordinates -->
+    <TextView
+        android:id="@+id/routeEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Coordinates"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">TrialsnTrails</string>
+
+    <!-- LoginActivity -->
+    <string name="login_title">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="google_login_button">Sign in with Google</string>
+    <string name="biometric_login_button">Biometric Login</string>
+    <string name="login_success">Login successful!</string>
+    <string name="login_failure">Login failed</string>
+
+    <!-- RouteListActivity -->
+    <string name="route_list_title">Route List</string>
+    <string name="route_name">Name</string>
+    <string name="route_difficulty">Difficulty</string>
+    <string name="route_distance">Distance</string>
+    <string name="route_start_point">Start Point</string>
+    <string name="route_end_point">End Point</string>
+    <string name="load_routes_error">Failed to load routes</string>
+    <string name="loading_error">Error: </string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_title">Settings</string>
+    <string name="location_display">Current Location: Kwa-Zulu Natal</string>
+    <string name="change_language">Change Language</string>
+    <string name="offline_mode">Offline Mode</string>
+    <string name="dark_mode">Enable Dark Mode</string>
+    <string name="unit_preference">Unit Preference</string>
+    <string name="step_goal">Enter Step Goal</string>
+    <string name="save_step_goal">Save Step Goal</string>
+    <string name="step_goal_updated">Step Goal Updated</string>
+    <string name="invalid_goal">Invalid Goal</string>
+    <string name="syncing_data">Syncing Data..</string>
+    <string name="offline_enabled">Offline Mode Enabled</string>
+    <string name="unit_kilometers">Kilometers</string>
+    <string name="unit_miles">Miles</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">FCM Notifications</string>
+    <string name="notification_title">New Notification</string>
+    <string name="notification_content">You have received a new message.</string>
+    <string name="confirm_language_change" />
+</resources>

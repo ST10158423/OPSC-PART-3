@@ -1,0 +1,27 @@
+<!-- res/layout/activity_splash.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Centered Splash Logo/Image -->
+
+    <!-- Optional App Name Text Below the Logo -->
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash_logo" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="TrailsnTrails"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+</RelativeLayout>

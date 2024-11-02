@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Zulu</item>
+        <item>Afrikaans</item>
+    </string-array>
+</resources>

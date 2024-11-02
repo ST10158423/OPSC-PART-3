@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Back Button with modern styling -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="start"
+        android:backgroundTint="#1E88E5"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <!-- Title Text with centered style -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Routes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Progress Bar in the center for better visibility -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+    <!-- Scrollable container for route items with padding -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/routeListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle">
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
