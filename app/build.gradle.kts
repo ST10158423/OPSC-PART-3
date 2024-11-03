@@ -75,8 +75,12 @@ dependencies {
 
 
     implementation("com.google.firebase:firebase-messaging:23.0.3")
+    implementation(libs.androidx.junit.ktx)
+    implementation(libs.androidx.truth)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    testImplementation ("org.jetbrains.kotlin:kotlin-test-junit:1.5.30")
 }
