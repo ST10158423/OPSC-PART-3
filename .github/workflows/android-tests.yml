@@ -1,0 +1,41 @@
+name: Android CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v1
+      with:
+        java-version: '11'
+
+    - name: Download dependencies
+      run: ./gradlew build --no-daemon
+
+    - name: Run unit tests
+      run: ./gradlew test --no-daemon
+
+    - name: Run Android instrumented tests
+      run: ./gradlew connectedAndroidTest --no-daemon
+      env:
+        ANDROID_SDK_ROOT: /usr/local/android-sdk
+
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-results
+        path: app/build/reports/tests/testDebugUnitTest/index.html
