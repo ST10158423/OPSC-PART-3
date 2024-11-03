@@ -57,6 +57,7 @@ dependencies {
     // Google Play Services and Firebase Authentication
     implementation("com.google.android.gms:play-services-auth")
     implementation("com.google.android.gms:play-services-maps:18.0.2")
+    implementation("com.google.android.gms:play-services-auth:20.2.0")
 
     // Retrofit and OkHttp for networking
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
